@@ -287,7 +287,11 @@ const talk_like_a_pirate = (() => {
 		if (pirate_talk[word]){
 			if (typeof pirate_talk[word] === 'string') return pirate_talk[word]
 
-			return pirate_talk[word][randomInt(0, pirate_talk[word].length - 1)]
+			let q = pirate_talk[word][randomInt(0, pirate_talk[word].length - 1)]
+
+			if (typeof q === 'string') return q;
+
+			return q();
 		}
 
 		// no translation available
