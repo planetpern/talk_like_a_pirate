@@ -356,6 +356,12 @@ const talk_like_a_pirate = (() => {
 			}
 		}
 
+		// if we're here, word has ended. add to array.
+		if (word.length) {
+			strArr.push(word)
+		}
+
+
 		// translate array elements
 		for (let i in strArr) {
 
