@@ -400,7 +400,7 @@ const talk_like_a_pirate = (() => {
 
 
 			// maybe add randon pirate saying afterwards
-			if (isPunk(after) && word.length > EOL_WORD_LENGTH && Math.random() > EOL_CHANGE) pirate_speak += ' ' + translate(before, '__eol__', after)
+			if (isPunk(after) && strArr[i].length > EOL_WORD_LENGTH && Math.random() > EOL_CHANGE) pirate_speak += ' ' + translate(before, '__eol__', after)
 
 		}
 
